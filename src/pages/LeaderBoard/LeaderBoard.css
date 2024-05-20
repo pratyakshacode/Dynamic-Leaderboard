@@ -1,0 +1,387 @@
+#leaderboard-section {
+  /* border: 1px solid rgb(153, 153, 153); */
+  /* height: 100vh; */
+  margin: 1.2rem 0px;
+  border-radius: 20px;
+  /* background-color: rgba(72, 0, 126, 0.1); */
+  /* background-color:rgba(3, 149, 206, 0.2); */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#leaderboard-section ul {
+  list-style: none;
+}
+
+#leaderboard-cover {
+  height: 100%;
+  width: 96%;
+  /* border: 1px solid white; */
+  position: absolute;
+  z-index: 2;
+}
+#leaderboard-section #leaderboard-header {
+  color: white;
+  display: flex;
+  padding: 1rem 0rem;
+  justify-content: center;
+  /* border: 1px solid rgb(153, 153, 153); */
+  background-color: rgb(0, 32, 59);
+  margin-bottom: 10px;
+  border-radius: inherit;
+  width: 90%;
+}
+
+#leaderboard-section #leaderboard-table-container {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  border: 1px solid rgb(115, 116, 116);
+  /* margin: 10px 0px; */
+  border-radius: inherit;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  width: 95%;
+  background-color: rgba(236, 234, 234, 0.5);
+  align-items: center;
+}
+
+#leaderboard-section #leaderboard-table-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#leaderboard-section #leaderboard-table-container li {
+  width: 100%;
+}
+#leaderboard-section #leaderboard-table-container .leaderboard-bar {
+  border: 1px solid black;
+  width: inherit;
+  display: flex;
+  justify-content: space-evenly;
+  height: 70px;
+  border-radius: 15px;
+  margin: 10px 0px;
+  background-color: white;
+}
+
+#leaderboard-section
+  #leaderboard-table-container
+  .leaderboard-bar
+  .leaderboard-bar-data {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+#winner-cover {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0.2px;
+  background-color: rgba(0, 1, 1, 0.817);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+#close-winner-cover {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#close-winner-cover button {
+  background: transparent;
+  border: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#winner-cover .winner-bar {
+  /* border: 2px solid white; */
+  border: 1px solid silver;
+  width: 80%;
+  margin: 10px;
+  height: 100px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background: linear-gradient(to left, rgb(47, 92, 136), rgb(28, 83, 106)); */
+  background: linear-gradient(to left, rgb(5, 176, 249), rgb(0, 0, 0));
+}
+
+#first-badge {
+  height: 70px;
+  width: 70px;
+  margin: 10px;
+  border: 2px solid gold;
+  border-radius: 50%;
+}
+
+#first-badge img {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
+#second-badge {
+  height: 70px;
+  width: 70px;
+  border: 2px solid silver;
+  border-radius: 50%;
+}
+
+#second-badge img {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
+#third-badge {
+  height: 70px;
+  width: 70px;
+  border: 2px solid rgb(181, 15, 15);
+  border-radius: 50%;
+}
+
+#third-badge img {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
+
+#winner-cover .winner-bar .winner-name {
+  width: 80%;
+  height: 80%;
+}
+
+#first-winner-name span {
+  color: gold;
+}
+
+#second-winner-name span {
+  color: silver;
+}
+
+#third-winner-name span {
+  color: rgb(255, 66, 139);
+}
+
+#winner-cover .winner-bar .winner-name span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+#show-result-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#show-result-container button {
+  background-color: rgb(0, 148, 148);
+  color: white;
+  padding: 0.5rem 1.3rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border: 0px;
+  margin: 10px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.disabled-button {
+  background-color: rgb(115, 116, 116) !important;
+}
+.set-attendence-button {
+  background-color: rgb(149, 1, 129) !important;
+}
+.clear-attendence-button {
+  background-color: rgb(115, 16, 44) !important;
+}
+
+#leaderboard-table-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  font-size: 1.3rem;
+  background-color: rgb(3, 53, 76);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#leaderboard-table-header .leaderboard-table-header-data {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  z-index: 3;
+}
+
+.leaderboard-table-header-data .header-select {
+  width: 70%;
+  height: 100%;
+  background-color: inherit;
+  color: white;
+  border: 0px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: rgb(3, 53, 76);
+  color: white;
+  text-align: center;
+}
+
+.leaderboard-table-header-data .solved-count-input {
+  width: 20%;
+  height: 100%;
+  color: white;
+  border: 0px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(3, 53, 76);
+  color: white;
+  text-align: center;
+}
+
+#attendence-indication {
+  position: absolute;
+  right: 30px;
+}
+
+#search-venue-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 30%;
+  height: 100%;
+}
+
+#search-venue-container select {
+  width: 50%;
+  height: 100%;
+  background-color: inherit;
+  color: white;
+  border: 0px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+}
+
+#show-result-container button:hover {
+  filter: brightness(1.2);
+}
+
+.set-venue-button {
+  background-color: rgb(0, 25, 148) !important;
+}
+
+#solved-count-select {
+  width: 40%;
+  height: 100%;
+  background-color: inherit;
+  color: white;
+  border: 0px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: rgb(3, 53, 76);
+  color: white;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  #leaderboard-section thead {
+    width: 99%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #leaderboard-section #leaderboard-table-container {
+    padding: 0.8rem;
+  }
+  #winner-cover .winner-bar .winner-name span {
+    font-size: 1.3rem;
+  }
+
+  #leaderboard-section
+    #leaderboard-table-container
+    .leaderboard-bar
+    .leaderboard-bar-data {
+    font-size: 0.8rem;
+  }
+
+  #leaderboard-table-header .leaderboard-table-header-data {
+    font-size: 1rem;
+  }
+
+  #leaderboard-table-header {
+    height: 60px;
+    margin-bottom: 5px;
+  }
+  #leaderboard-section #leaderboard-header {
+    padding: 0.8rem 0rem;
+  }
+
+  #attendence-indication {
+    right: 20px;
+  }
+  #show-result-container button {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  #leaderboard-header-attendence #select-attendence {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@500&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+}
+
+#leaderboard-navbar {
+  height: 75px;
+  width: 98%;
+  border-radius: 25px;
+  background-color: #0069af;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+#leaderboard-navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+#leaderboard-navbar ul li {
+  margin: 0rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#leaderboard-navbar ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: rgb(1, 61, 93);
+  border-radius: 10px;
+}
+
+#leaderboard-footer {
+  background: linear-gradient(45deg, rgb(14, 0, 32), black);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  height: 100px;
+  width: 97%;
+}
+
+#body-container {
+  padding: 1.2rem 0px;
+  /* background: linear-gradient(45deg, rgb(1, 22, 35), rgb(59, 2, 61)) no-repeat; */
+  width: 98vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media (max-width: 600px) {
+  #leaderboard-navbar {
+    height: 60px;
+    width: 96%;
+  }
+  #leaderboard-navbar ul li {
+    font-size: 1rem;
+  }
+
+  #leaderboard-section #leaderboard-header {
+    text-align: center;
+  }
+}

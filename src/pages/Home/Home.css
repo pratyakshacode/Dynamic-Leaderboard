@@ -1,0 +1,123 @@
+#home {
+  margin: 20px 0px;
+  position: relative;
+  width: 100%;
+}
+
+#stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#home-content {
+  height: 85vh;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  border-radius: 20px;
+  display: flex;
+}
+
+#home-content .home-content-box {
+  /* width: 100%; */
+  color: rgb(73, 72, 72);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#home-content-left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-content-left h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#googlesheet-url-box {
+  width: 100%;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0px;
+  align-items: center;
+}
+
+#googlesheet-url-box #googlesheet-url-input {
+  width: 70%;
+  height: 2.9rem;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+#googlesheet-url-box button {
+  width: 20%;
+  height: 2.7rem;
+  background-color: #19699e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#home-content #home-content-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+}
+#home-content #home-content-right #home-intro-container {
+  border: 2px solid black;
+  height: 18.4rem;
+  width: 18.4rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+#being-zero-logo {
+  filter: invert(1);
+}
+
+#home-content #home-content-right #home-intro-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+@media (max-width: 660px) {
+  #home-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home-container #home-content-right {
+    /* border: 2px solid white; */
+  }
+  #home-content #home-content-right #home-intro-container {
+    height: 13.4rem;
+    width: 13.4rem;
+  }
+
+  #home-content .home-content-box {
+    width: 100% !important;
+  }
+
+  #home-content-left {
+    /* border: 2px solid white; */
+    height: 100%;
+  }
+  #home-content-right {
+    /* border: 2px solid white; */
+    height: 100%;
+  }
+}
